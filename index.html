@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Fatos Históricos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🧠 Quiz de Fatos Históricos</h1>
+
+    <div id="tela-inicial">
+      <p>Digite seu nome para começar:</p>
+      <input type="text" id="nomeJogador" placeholder="Seu nome">
+      <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <div id="tela-quiz" class="hidden">
+      <h2 id="contador"></h2>
+      <p id="pergunta"></p>
+
+      <input type="number" id="resposta" placeholder="Digite o ano">
+      <button onclick="enviarResposta()">Responder</button>
+
+      <p id="feedback"></p>
+    </div>
+
+    <div id="tela-resultado" class="hidden">
+      <h2>Resultado Final</h2>
+      <p id="resultadoFinal"></p>
+      <button onclick="reiniciar()">Jogar Novamente</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
